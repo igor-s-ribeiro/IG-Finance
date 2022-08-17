@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IG Finance</title>
+    <link rel="icon" type="image/x-icon" href="../Icons/bx-pyramid.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+
+    <div id="app">
+        <section class="auth-box shadow" id="app">
+            <section class="login">
+                <section class="header">
+                    <h2>Login</h2>
+                </section>
+                <section class="item-list">
+                    <section class="item shadow">
+                        <i class="fab fa-google"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </section>
+                </section>
+                <section class="body">
+                    <form action="" method="post">
+                        <label for="email">
+                            <div class="w-100 text-right blue-color"><i class="far fa-envelope"></i></div>
+                            <input type="text" name="email" placeholder="example@dominio.com">
+                        </label>
+                        <label for="password">
+                            <div class="w-100 text-right blue-color"><i class="fas fa-lock"></i></div>
+                            <input type="password" name="password" placeholder="senha">
+                        </label>
+                        <label class="d-flex flex-column">
+                            <button type="submit" class="blue text-center">Acessar</button>
+                            <a href="" class="forget-password">
+                                Esqueci minha senha
+                            </a>
+                        </label>
+                    </form>
+                </section>
+            </section>
+            <section class="register">
+                <section class="header">
+                    <h2>Registrar-se</h2>
+                </section>
+                <section class="item-list">
+                    <section class="item shadow">
+                        <i class="fab fa-google"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </section>
+                </section>
+                <section class="body">
+                    <form method="post">
+                        <label for="name">
+                            <div class="w-100 text-right pink-color"><i class="fas fa-user-alt"></i></div>
+                            <input type="text" id="name" placeholder="Usuário">
+                        </label>
+                        <label for="email">
+                            <div class="w-100 text-right pink-color"><i class="far fa-envelope"></i></div>
+                            <input type="email" id="email" placeholder="example@dominio.com">
+                        </label>
+                        <label for="password">
+                            <div class="w-100 text-right pink-color"><i class="fas fa-lock"></i></div>
+                            <input type="password" id="password" placeholder="senha">
+                        </label>
+                        <label class="d-flex flex-column">
+                            <button type="submit" class="pink text-center">Registrar</button>
+                        </label>
+                    </form>
+                </section>
+            </section>
+            <section class="box-color">
+                <h3 class="title">Não tenho login</h3>
+                <button type="button" class="register-btn pink text-center">Registrar-se</button>
+                <h3 class="title2">Já tenho login</h3>
+                <button type="button" class="login-btn blue text-center">Acessar</button>
+            </section>
+        </section>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="../JavaScript/login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>IG Finance</title>
+  <link rel="icon" type="image/x-icon" href="../Icons/bx-pyramid.png">
+  <link rel="stylesheet" href="../CSS/home.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <div class="icon-container">
+                <img class="icon hexagon" />
+            </div> 
+            <span class="name">IG Finance</span>
+        </a>
+        <ul class="navbar-nav">
+            <li>
+                <a class="active"><img class="icon home" /><span>Home</span></a>
+            </li>
+            <li>
+                <a><img class="icon statistics" /><span>Estatística</span></a>
+            </li>
+            <li>
+                <a><img class="icon mail" /><span>Mensagem</span></a>
+            </li>
+            <li>
+                <a><img class="icon user" /><span>Perfil</span></a>
+            </li>
+            <li>
+                <a><img class="icon file" /><span>Documentos</span></a>
+            </li>
+
+        </ul>
+        <div class="navbar-footer">
+            <img class="image-documents" src="https://ozcanzaferayan.github.io/financial-crm/img/documents.svg" alt="documents" />
+            <div class="container">
+                <h2>Relatório PDF</h2>
+                <span>Relatório detalhe anual</span>
+                <a href="#" download>Download</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <section role="search">
+                <form action="#" method="get">
+                    <div class="form-inline">
+                        <img class="icon search" />
+                        <input type="search" placeholder="Search" />
+                    </div>
+                </form>
+            </section>
+
+            <section role="application">
+                <button class="change-view">
+                    <img class="icon layout" />Change view
+                </button>
+                <button class="notification">
+                    <img class="icon notification" />
+                </button>
+                <button class="menu">
+                    <img class="icon menu" />
+                </button>
+            </section>
+        </header>
+        <h1>Visão Geral</h1>
+        <div class="charts-wrapper">
+            <section role="credit-card">
+                <div class="top">
+                    <img src="" />
+                    <img src="https://ozcanzaferayan.github.io/financial-crm/img/apple_pay.svg" class="apple_pay" />
+                </div>
+                <div class="ccNumber">
+                    <span>˙˙˙˙ ˙˙˙˙ ˙˙˙˙ 5610</span>
+                </div>
+                <div class="ccBottom">
+                    <div class="ccValidThru">
+                        <label>VALID THRU</label>
+                        <span>05/21</span>
+                    </div>
+                    <div class="ccCardHolder">
+                        <label>CARD HOLDER</label>
+                        <span>Igor Ribeiro</span>
+                    </div>
+                </div>
+                
+            </section>
+            <section role="chart" class="exchange-rates">
+                <h3 class="title">Taxas de Cambio</h3>
+                <canvas id="exchangeRates"></canvas>
+            </section>
+            <section role="chart" class="last-costs">
+                <h3 class="title">Últimos Custos</h3>
+                <canvas id="last_costs"></canvas>
+
+            </section>
+            <section role="chart" class="efficiency">
+                <h3 class="title">Eficiência</h3>
+                <canvas id="efficiency"></canvas>
+
+            </section>
+        </div>
+    </main>
+</body>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js'></script>
+<script src='https://ozcanzaferayan.github.io/financial-crm/vendor/chartjs/Chart.roundedBarCharts.js'></script><script  src="../JavaScript/home.js"></script>
+
+</body>
+</html>
